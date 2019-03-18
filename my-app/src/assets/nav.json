@@ -1,0 +1,30 @@
+[
+    {
+        "type": "welcome",
+        "name": "欢迎页",
+        "icons": [
+            {
+                "src": "favicon.ico"
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "name": "留言板",
+        "icons": [
+            {
+                "src": "favicon.ico"
+            }
+        ]
+    },
+    {
+        "type": "agency",
+        "name": "代办事项（新功能）",
+        "icons": [
+            {
+                "src": "favicon.ico"
+            }
+        ]
+    }
+]
+  
