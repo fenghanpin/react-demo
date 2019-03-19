@@ -11,13 +11,6 @@ class NavHover extends React.Component{
     }
 
     render() {
-        const imgStyle = {
-            "width": "30px",
-            "height": "30px",
-            "borderRadius": "15px",
-            "verticalAlign": "middle",
-            "marginBottom": "2px"
-        }
         const spanName = {
             "fontSize": '14px'
         }
@@ -30,8 +23,7 @@ class NavHover extends React.Component{
                 <ul>
                     {navHoverArr}
                     <div className="clearfloat">
-                        <img src={this.props.user} alt="" style={imgStyle}/>
-                        <a onClick={this.logOut} className="logout cp ml10">退出</a>
+                        <a onClick={this.logOut} className="logout cp ml5">退出</a>
                     </div>
                 </ul>
             </div>

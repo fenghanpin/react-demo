@@ -1,6 +1,6 @@
 import React from 'react'
 import NavHover from './navHover'
-import navData from '../../assets/nav.json'
+import navData from './nav.json'
 import './nav.less'
 import user from '../../assets/image/admin.png'
 import expand from '../../assets/image/expand.jpg'
@@ -55,26 +55,21 @@ class NavPage extends React.Component{
                         {navArr}
                     </ul>
                 </div>
-                <div className="right-content di fr">
-                    <ul>
-                        <li className="fl mr10">
-                            <img src={user} alt="" className="img-style"/>
-                        </li>
-                        <li className="fl">
-                            <a onClick={this.logOut} className="logout cp">退出</a>
-                        </li>
-                    </ul>
-                </div>
-                <div className="expand-content dn fr mt10"
+                <div className="expand-content dn fr mt10 mr20"
                     onMouseOver={this.handleMouseUserOver}
                     onMouseLeave={this.handleMouseOut}>
                     <img src={expand} alt="" className="img-style"/>
                 </div>
+                <div className="right-content di fr mr20">
+                    <a onClick={this.logOut} className="logout cp">退出</a>
+                </div>
+                <div className="user-content di fr mr10">
+                    <img src={user} alt="" className="img-style"/>
+                </div>
                 <NavHover 
                 hover={this.state.hover}
                 tabType={this.props.tabType}
-                navData={navData} 
-                user={user} 
+                navData={navData}
                 handleTab={this.handleTab} 
                 logOut={this.logOut}/>
             </div>

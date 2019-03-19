@@ -21,6 +21,9 @@ class HomeContent extends React.Component{
 
     render() {
         let compon = ''
+        const h = {
+            height: '70px'
+        }
         switch (this.state.type) {
             case 'welcome':
                 compon = <Welcome changeMain={this.changeMain} />
@@ -37,6 +40,7 @@ class HomeContent extends React.Component{
         return (
             <div>
                 <NavPage changeMain={this.changeMain} tabType={this.state.type}/>
+                <div style={h}></div>
                 <MainPage compon={compon}/>
             </div>
         )

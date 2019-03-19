@@ -10,6 +10,12 @@ body {
 .fr {
     float: right;
 }
+.fs14{
+    font-size: 14px !important;
+}
+.fs16{
+    font-size: 16px !important;
+}
 .ml5 {
     margin-left: 5px !important;
 }

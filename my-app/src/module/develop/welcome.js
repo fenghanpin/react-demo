@@ -13,7 +13,7 @@ class Welcome extends React.Component{
 
     render() {
         return (
-            <div className="pl20 pr20 wel-container mr20 ml20">
+            <div className="wel-container pl20 pr20 mr20 ml20">
                 <h1>
                     欢迎使用 Fengyifan Demo
                 </h1>
